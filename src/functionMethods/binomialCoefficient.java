@@ -20,6 +20,6 @@ public class binomialCoefficient {
         return binCoeff;
     }
     public static void main(String[] args) {
-        System.out.println(biCoeff(5, 2));
+        System.out.println(biCoeff(5, 2 ));
     }
 }
