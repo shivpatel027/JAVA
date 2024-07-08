@@ -7,6 +7,18 @@ public class OOPS {
         System.out.println(pen.color);
         pen.setTip(10);
         System.out.println(pen.tip);
+
+        BankAccount myAcc = new BankAccount();
+        myAcc.username = "Shiv Patel";
+        // myAcc.password = "abcdefg";
+    }
+}
+
+class BankAccount {
+    public String username;
+    private String password;
+    public void setPassword(String pwd) {
+        password = pwd;
     }
 }
 
