@@ -4,9 +4,9 @@ public class OOPS {
     public static void main(String[] args) {
         Pen pen = new Pen();
         pen.setColor("Blue");
-        System.out.println(pen.color);
+        System.out.println(pen.getColor());
         pen.setTip(10);
-        System.out.println(pen.tip);
+        System.out.println(pen.getTip());
 
         BankAccount myAcc = new BankAccount();
         myAcc.username = "Shiv Patel";
@@ -23,11 +23,19 @@ class BankAccount {
 }
 
 class Pen {
-    String color;
-    int tip;
+    private String color;
+    private int tip;
+
+    String getColor()   {
+        return this.color;
+    }
+
+    int getTip() {
+        return this.tip;
+    }
 
     void setColor(String newColor) {
-        color = newColor;
+        this.color = newColor;
     }
 
     void setTip(int newTip) {
